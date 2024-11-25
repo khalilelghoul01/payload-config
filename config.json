@@ -18,6 +18,12 @@
       "target": "./app/(payload)/admin/[[...segments]]/page.tsx"
     },
     {
+      "path": "./app/(payload)/admin/importMap.js",
+      "content": "\n\nexport const importMap = {\n\n}\n",
+      "type": "registry:example",
+      "target": "./app/(payload)/admin/importMap.js"
+    },
+    {
       "path": "./app/(payload)/api/[...slug]/route.ts",
       "content": "/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */\n/* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */\nimport config from '@/payload.config'\nimport '@payloadcms/next/css'\nimport {\n  REST_DELETE,\n  REST_GET,\n  REST_OPTIONS,\n  REST_PATCH,\n  REST_POST,\n  REST_PUT,\n} from '@payloadcms/next/routes'\n\nexport const GET = REST_GET(config)\nexport const POST = REST_POST(config)\nexport const DELETE = REST_DELETE(config)\nexport const PATCH = REST_PATCH(config)\nexport const PUT = REST_PUT(config)\nexport const OPTIONS = REST_OPTIONS(config)\n",
       "type": "registry:example",
