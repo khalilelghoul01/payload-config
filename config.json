@@ -55,7 +55,7 @@
     },
     {
       "path": "./app/(root)/page.tsx",
-      "content": "import { getPayload } from 'payload'\nimport React from 'react'\nimport configPromise from '@/payload.config'\nimport Test from './test'\n\nasync function page() {\n  const payload = await getPayload({\n    config: configPromise,\n  })\n\n  const data = await payload.find({\n    collection: 'opening-time',\n  })\n  return (\n    <pre>\n      {JSON.stringify(data.docs, null, 2)}\n      <Test />\n    </pre>\n  )\n}\n\nexport default page\n",
+      "content": "import { getPayload } from 'payload'\nimport React from 'react'\nimport configPromise from '@/payload.config'\n\nasync function page() {\n  const payload = await getPayload({\n    config: configPromise,\n  })\n\n  const data = await payload.find({\n    collection: 'opening-time',\n  })\n  return (\n    <pre>\n      {JSON.stringify(data.docs, null, 2)}\n         </pre>\n  )\n}\n\nexport default page\n",
       "type": "registry:example",
       "target": "./app/(root)/page.tsx"
     },
